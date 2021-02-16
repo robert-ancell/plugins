@@ -1,3 +1,7 @@
+## 2.0.1
+
+* Re-add change to getApplicationSupportPath from using executable name to application ID (if provided).
+
 ## 2.0.0
 
 * Migrate to null safety.
