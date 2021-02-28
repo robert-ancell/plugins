@@ -1,6 +1,7 @@
 ## 2.0.1
 
-* Re-add change to getApplicationSupportPath from using executable name to application ID (if provided).
+* Change getApplicationSupportPath from using executable name to application ID (if provided).
+  * If the executable name based directory exists, continue to use that so exisiting applications continue with the same behaviour.
 
 ## 2.0.0
 
