@@ -6,15 +6,8 @@ import 'package:path_provider_linux/path_provider_linux.dart';
 import 'package:path_provider_platform_interface/path_provider_platform_interface.dart';
 
 void main() {
-  TestWidgetsFlutterBinding.ensureInitialized();
-  PathProviderLinux.register();
-
-  setUp(() {});
-
-  tearDown(() {});
-
   test('getTemporaryPath', () async {
-    final plugin = PathProviderPlatform.instance;
+    final plugin = PathProviderLinux();
     expect(await plugin.getTemporaryPath(), '/tmp');
   });
 }
